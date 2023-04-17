@@ -14,16 +14,6 @@ class _HelloScreenState extends State<HelloScreen> {
   Color backgroundColor = Colors.white;
    String randomText = 'Hello There';
 
-void changeBackgroundColor() {
-    setState(() {
-      backgroundColor = Color.fromRGBO(
-        Random().nextInt(256),
-        Random().nextInt(256),
-        Random().nextInt(256),
-        1,
-      );
-    });
-  }
   void changeBackgroundColorAndText() {
     setState(() {
       backgroundColor = Color.fromRGBO(
